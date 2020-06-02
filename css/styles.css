@@ -98,8 +98,9 @@ img {
 }
 
 /* Auth-nav */
-.icon-envelope {
+.icon-header {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .auth-nav {
@@ -211,33 +212,20 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* .feature-list .item::before {
-  content: "";
-  display: block;
+.feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 4px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  border-radius: 4px;
 }
-.feature-list .item:nth-child(1)::before {
-  background-image: url(../imeges/antenna.svg);
-  background-size: 70px;
+.feature-box .icon {
+  width: 70px;
+  height: 70px;
 }
-.feature-list .item:nth-child(2)::before {
-  background-image: url(../imeges/clock.svg);
-  background-size: 70px;
-}
-.feature-list .item:nth-child(3)::before {
-  background-image: url(../imeges/computer.svg);
-  background-size: 70px;
-}
-.feature-list .item:nth-child(4)::before {
-  background-image: url(../imeges/technologies.svg);
-  background-size: 70px;
-} */
 .feature-list .title {
   margin: 0;
   margin-bottom: 10px;
@@ -264,13 +252,8 @@ img {
   margin-right: 30px;
   margin-bottom: 0;
 }
-/* .feature-list .item:nth-child(4n) {
-  margin-right: 0;
-} */
 /* Specialization */
-.section.border {
-  border-top: 1px solid #ececec;
-}
+
 .specialization-list .link {
   color: var(--white-color);
 
@@ -448,6 +431,25 @@ footer {
   width: 1200px;
   margin: 0 auto;
 }
+.footer-link .list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--white-color);
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+.icon-footer:hover {
+  background-color: var(--accent-color);
+}
+
 /* Портфолио */
 
 /* Фильтр */
